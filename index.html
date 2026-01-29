@@ -144,10 +144,10 @@ async function ask() {
     chatbox.scrollTop = chatbox.scrollHeight;
 
     // API call
-    const response = await fetch("http://127.0.0.1:8000/ask", {
+    const response = await fetch("http://3.108.67.4:8000/ask", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({ query: question })
+        body: JSON.stringify({ quetion: question })
     });
 
     const data = await response.json();
