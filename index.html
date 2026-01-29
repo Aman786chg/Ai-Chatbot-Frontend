@@ -147,7 +147,7 @@ async function ask() {
     const response = await fetch("http://3.108.67.4:8000/ask", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({ quetion: question })
+        body: JSON.stringify({ question: question })
     });
 
     const data = await response.json();
